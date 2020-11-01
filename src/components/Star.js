@@ -3,7 +3,8 @@ import React from 'react';
 const Star = (props) =>
   // 1. Call the function that updates the rating state each time a list item is clicked
   // 2. Give the <li> the class 'selected' if it's one of the selected stars
-  <li>
+  
+  <li onClick={props.starUpdate} className={props.isSelected ? 'selected':null}>
     <svg x="0px" y="0px"
     viewBox="0 0 16 15" className="star">
       <path d="M8.5,0.3l2,4.1c0.1,0.2,0.2,0.3,0.4,0.3l4.6,0.7c0.4,0.1,0.6,0.6,0.3,0.9l-3.3,3.2c-0.1,0.1-0.2,0.3-0.2,0.5l0.8,4.5
